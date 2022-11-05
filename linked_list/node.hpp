@@ -21,6 +21,7 @@ public:
     void setData(Data d) {data = d;}
     Node* getNext() const {return next;}
     void setNext(Node* n) {next = n;}
+    //friend class so List class can access member arguments (i.e. next and data)
     friend class List;
 };
 
